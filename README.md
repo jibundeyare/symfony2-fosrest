@@ -14,21 +14,24 @@ Modifiez le fichier `app/config/parameters.yml` pour configurer l'accès à la b
 
 ## installation
 
-### la base de données
-
-Sous linux ou mac os, pour recréer une base de données de zéro :
-
-    ./reset-db.sh
-
-**ATTENTION** : le script `reset-db.sh` détruit la base de données avant de la récréer. Faites un backup préalable si nécessaire.
-
-Sous windows, examinez le fichier `reset-db.sh` et adaptez les commandes à votre OS.
-
 ### les dépendances
 
 Pour installer les dépendances :
 
     composer install
+
+### la base de données
+
+Sous linux ou mac os, pour recréer une base de données de zéro :
+
+    php app/console doctrine:database:drop --force
+    php app/console doctrine:database:create
+    php app/console doctrine:migrations:migrate --no-interaction
+    php app/console hautelook_alice:doctrine:fixtures:load --no-interaction
+
+**ATTENTION** : ces commandes détruisent la base de données avant de la récréer. Faites un backup préalable si nécessaire.
+
+Sous windows, examinez le fichier `reset-db.sh` et adaptez les commandes à votre OS.
 
 ## utilisation
 
