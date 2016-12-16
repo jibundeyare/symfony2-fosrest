@@ -1,0 +1,26 @@
+tasks:
+    prefix: /api/{version}
+    resource: "AppBundle\Controller\Api\TasksController"
+    type: rest
+
+levels_v1:
+    prefix: /api/{version}
+    resource: "AppBundle\Controller\Api\\LevelsController"
+    type: annotation
+
+levels_v2:
+    parent: tasks
+    prefix: /api/{version}
+    resource: "AppBundle\Controller\Api\V2LevelsController"
+    type: rest
+
+levels_v3:
+    parent: tasks
+    resource: "AppBundle\Controller\Api\V3LevelsController"
+    type: rest
+
+levels:
+    prefix: /api
+    resource: "AppBundle\Controller\Api\V3LevelsController"
+    type: annotation
+

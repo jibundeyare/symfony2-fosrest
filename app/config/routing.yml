@@ -1,0 +1,8 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+app_api:
+    resource: "@AppBundle/Resources/config/api_routes.yml"
+    type: rest
+

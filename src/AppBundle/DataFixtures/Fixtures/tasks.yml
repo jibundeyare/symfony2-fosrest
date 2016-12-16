@@ -1,0 +1,8 @@
+AppBundle\Entity\Task:
+    task_{1..50}:
+        comments: 30%? <sentence(20)>
+        deadline: 40%? <dateTimeBetween('-2 months', '+2 months')>
+        description: <sentence(6)>
+        done: <boolean(60)>
+        level: '@level_*'
+

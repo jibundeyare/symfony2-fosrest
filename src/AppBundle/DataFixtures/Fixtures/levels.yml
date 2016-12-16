@@ -1,0 +1,8 @@
+AppBundle\Entity\Level:
+    level_1:
+        description: normal
+    level_2:
+        description: important
+    level_3:
+        description: urgent
+
