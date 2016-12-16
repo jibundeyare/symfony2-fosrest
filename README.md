@@ -20,7 +20,7 @@ Sous linux ou mac os, pour recréer une base de données de zéro :
 
     ./reset-db.sh
 
-**ATTENNTION** : le script `reset-db.sh` détruit la base de données avant de la récréer. Faites un backup préalable si nécessaire.
+**ATTENTION** : le script `reset-db.sh` détruit la base de données avant de la récréer. Faites un backup préalable si nécessaire.
 
 Sous windows, examinez le fichier `reset-db.sh` et adaptez les commandes à votre OS.
 
