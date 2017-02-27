@@ -1,4 +1,4 @@
-# api est avec Symfony 2.8
+# api rest avec Symfony 2.8
 
 ## description
 
